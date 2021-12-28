@@ -1,11 +1,19 @@
 import './App.css';
-
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Button, Navbar} from 'react-bootstrap';
+import { propTypes } from 'react-bootstrap/esm/Image';
+import React from 'react';
 
+const num = number
+const NewUsser = (props:{num:number})=>{
+  let num = 0
+  return(
+    <a></a>
+  )
+}
+ cosnt [num, setNum] = React.useState
 
-function App() {
+function App (){
   return (
     
     <div className="App">
@@ -33,9 +41,16 @@ function App() {
     </div>
   </div>
 </Navbar>
+
       <header className="App-header">
-        
-      <Button type="button" class="btn btn-outline-dark">Acceso</Button>
+        <NewUsser num={num}/>
+        <a>
+          Usuario número: - {props.num}
+        </a>
+      <Button type="button" class="btn btn-outline-dark" onClick={()=>{
+        console.log("CLICK")
+        setNum(num + 1 )
+      }}>Acceso</Button>
       </header>
     </div>
   );
